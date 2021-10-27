@@ -12,12 +12,11 @@ void StringrevX(char src[])
             {
                   iFlag = 1;
             }
+            src++;
             if(iFlag == 1)
             {
                   *src = *src - 32;
             }
-            printf("%c ",*src);
-            src++;
             iFlag = 0;
       }
 }
@@ -29,7 +28,6 @@ int main()
       scanf("%[^'\n']c",arr);
 
       StringrevX(arr);
-
-
+      printf("%s",arr);
       return 0;
 }
